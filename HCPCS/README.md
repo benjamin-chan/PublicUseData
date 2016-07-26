@@ -6,7 +6,9 @@ Usage example:
 
 ```
 source("readHCPCS.R")
-D <- rbindlist(list(readHCPCS("14anweb.zip"),
+D <- rbindlist(list(readHCPCS("12anweb.zip"),
+                    readHCPCS("13anweb.zip"),
+                    readHCPCS("14anweb.zip"),
                     readHCPCS("2015-Annual-Alpha-Numeric-HCPCS-File.zip"),
                     readHCPCS("2016-Alpha-Numeric-HCPCS-File.zip")))
 ```
