@@ -6,7 +6,7 @@ readHCPCS <- function (filename) {
     download.file(url, f)
     filenames <- unzip(f, list=TRUE)[, "Name"]
     unzip(f, exdir=tempdir())
-    f <- file.path(tempdir(), grep("ANWEB.*txt$", filenames, value = TRUE, ignore.case = TRUE))
+    f <- file.path(tempdir(), grep("((A-N)|(ANWEB)).*txt$", filenames, value = TRUE, ignore.case = TRUE))
     colInfo <- matrix(c("HCPCS_CD", "5", "character",
                         "HCPCS_SQNC_NUM", "5", "integer",
                         "HCPCS_REC_IDENT_CD", "1", "character",
