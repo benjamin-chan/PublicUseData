@@ -1,5 +1,11 @@
 # Create NDC Translation Table
 
+## CAUTION
+
+This uses data from [FDA.gov](http://www.fda.gov/Drugs/InformationOnDrugs/ucm142438.htm).
+I have been told that the data from FDA.gov is **notoriously under-populated.**
+**If your goal is to supplement drug information from claims with drug information from FDA.gov, then you will have problems.**
+
 NDC codes on Oregon APAC and Medicaid prescription drug claims datasets are in an 11-digit non-hyphenated format.
 NDC codes on the data files from the FDA are in a 10-digit hyphenated format.
 The NDC data files from the FDA also contain drug names and classes.
